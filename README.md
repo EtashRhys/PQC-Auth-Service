@@ -46,10 +46,20 @@ Quantum computers threaten current public-key cryptography ("store now, decrypt 
 
 ### 1. Clone & Setup
 
-```bash
-git clone https://github.com/YOURUSERNAME/pq-auth.git
-cd pq-auth
+bash
 
-# Using uv (recommended) or pip
-uv sync          # or: pip install -e ".[dev]"
-cp .env.example .env
+# Run the API
+uv run fastapi dev src/pq_auth/main.py
+# or: make run
+
+Visit http://localhost:8000/docs for interactive API docs.CLI examples:bash
+
+uv run pq-auth keygen --hybrid
+uv run pq-auth bench
+
+DocumentationArchitecture & Design Decisions (docs/architecture.md)
+Benchmarks (docs/benchmarks.md)
+API Reference (docs/api.md) (or via /docs when running)
+
+Security & DisclaimerThis is for research, evaluation, and non-production use until independently audited.See SECURITY.md for responsible disclosure and security policy.We strongly recommend professional cryptographic review before production use.ContributingContributions welcome! See CONTRIBUTING.md.Security issues should be reported privately via the Security tab.LicenseApache License 2.0 — see LICENSE file.Built with respect for future quantum threats.
+
