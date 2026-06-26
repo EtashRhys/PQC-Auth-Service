@@ -45,10 +45,10 @@ A full interactive **Streamlit Demo** ("Quantum-Safe Login Arena") is coming ver
 - Clean, maintainable modular architecture
 - Easy-to-use PQC wrappers for custom integration
 
-- Why This Project Exists
+- Why This Project Exists.
 Most PQC work remains low-level or theoretical. This project bridges the gap by providing a developer-friendly, production-oriented solution that organizations can start testing and integrating immediately.
 
-- Contributing
+- Contributing.
 Contributions are welcome! See CONTRIBUTING.md for details.
 
 ## Quick Start
