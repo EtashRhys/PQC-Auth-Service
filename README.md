@@ -16,7 +16,7 @@ This repository contains the project structure and source code for a hybrid PQC 
 
 ## Why This Project?
 
-Quantum computers pose a "store now, decrypt later" threat to current public-key cryptography. This aims to be a **practical reference implementation** of hybrid PQC authentication.
+Quantum computers pose a "store now, decrypt later" threat to current public-key cryptography. This aims to be a **practical reference implementation** of hybrid PQC authentication for evaluation and prototyping.
 
 ## Features
 
@@ -31,24 +31,18 @@ Quantum computers pose a "store now, decrypt later" threat to current public-key
 - **Developer Experience**
   - FastAPI REST endpoints with OpenAPI docs
   - Typer CLI for admin tasks, key generation, and benchmarks
-  - Comprehensive test suite (unit, integration, PQC-specific, performance)
-  - Docker + Docker Compose support
-  - MkDocs documentation site
-- **Observability & Ops**
-  - Structured logging, Pydantic configuration
-  - CI/CD workflows, pre-commit hooks, Makefile
+  - Comprehensive test suite (planned)
+  - Docker support (planned)
 
-## Project Structure
+## Current Project Structure
 
 ```bash
-pq-auth/
-├── src/pq_auth/           # Main package
-│   ├── pqc/               # ← Core: ML-KEM, ML-DSA, hybrid logic
-│   ├── auth/              # Authentication logic & API
-│   ├── core/              # Config, security, database
-│   └── ...
-├── tests/
-├── docs/
-├── docker/
-├── pyproject.toml
+src/
+├── pq_auth/
+│   ├── pqc/          # ← Core strength: ML-KEM, ML-DSA, hybrid logic
+│   ├── auth/
+│   ├── utils/
+│   ├── config.py
+│   └── main.py
+├── examples/
 └── ...
