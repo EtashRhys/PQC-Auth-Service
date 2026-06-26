@@ -1,0 +1,36 @@
+[project]
+name = "pq-auth"
+version = "0.1.0"
+description = "Hybrid Post-Quantum Authentication Service using ML-KEM + ML-DSA"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "EtashRhys" }
+]
+
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "pydantic>=2.0",
+    "python-dotenv>=1.0.0",
+    # Uncomment these when you add them:
+    # "sqlalchemy>=2.0",
+    # "alembic>=1.13",
+    # "typer>=0.12",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.6.0",
+    "pytest>=8.0",
+    "black>=24.0",
+    "pre-commit>=3.0",
+]
+
+[tool.uv]
+dev-dependencies = ["pq-auth[dev]"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
