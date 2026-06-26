@@ -1,71 +1,69 @@
-# PQC-Auth-Service
-
-**Hybrid Post-Quantum Authentication Service**  
-*Built for the real world — ML-KEM + ML-DSA hybrid cryptography*
-
----
-
-**🛡️ Aligned with the White House Executive Orders of June 22, 2026**
-
-On **June 22, 2026**, President Donald J. Trump signed two landmark Executive Orders:
-
-- **Executive Order 14412**: *"Securing the Nation Against Advanced Cryptographic Attacks"*
-- **Executive Order 14413**: *"Ushering in the Next Frontier of Quantum Innovation"*
-
-These orders accelerate the national transition to **Post-Quantum Cryptography (PQC)**, with aggressive deadlines:
-- High-value assets and key establishment → **by December 31, 2030**
-- Digital signatures and authentication → **by December 31, 2031**
-
-They directly address the "**harvest now, decrypt later**" threat and call for rapid adoption of NIST-standardized PQC algorithms (including ML-KEM and ML-DSA) across federal systems, critical infrastructure, and contractors.
-
-**This project exists to make that transition practical and immediate.**
-
----
-
-## Overview
-
-`pq-auth-service` is a clean, production-ready, hybrid post-quantum authentication service written in Python. It combines classical cryptography (Ed25519 / X25519) with NIST-standardized PQC algorithms (ML-KEM-768 + ML-DSA-65) to deliver quantum-resistant login, token issuance, and session management **today**.
-
 # pq-auth
 
-**Hybrid Post-Quantum Authentication Service** (Work in Progress)  
-Secure, modern authentication built for the quantum era.
+**Hybrid Post-Quantum Authentication Service**  
+*Secure authentication for the quantum era — today.*
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue)](https://www.python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-green)](https://fastapi.tiangolo.com)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
-A practical hybrid Post-Quantum Cryptography (PQC) authentication service using **NIST FIPS 203 (ML-KEM)** for key encapsulation and **FIPS 204 (ML-DSA)** for digital signatures. It combines these with classical algorithms (X25519 + ML-KEM, ECDSA + ML-DSA).
+---
 
-## Status: Work in Progress
+**🛡️ Aligned with White House Executive Orders — June 22, 2026**
 
-This repository contains the project structure and source code for a hybrid PQC auth service.  
-**Not all parts are fully integrated or end-to-end tested yet.** The code is modular by design — feel free to explore, copy individual modules, and adapt them for your own needs.
+On **June 22, 2026**, President Donald J. Trump signed two landmark Executive Orders:
 
-## Why This Project?
+- **EO 14412**: *"Securing the Nation Against Advanced Cryptographic Attacks"*
+- **EO 14413**: *"Ushering in the Next Frontier of Quantum Innovation"*
 
-Quantum computers pose a "store now, decrypt later" threat to current public-key cryptography. This aims to be a practical reference implementation of hybrid PQC authentication for evaluation and prototyping.
+These orders accelerate America's transition to Post-Quantum Cryptography with aggressive deadlines:
+- High-value assets and key establishment → **by December 31, 2030**
+- Digital signatures and authentication → **by December 31, 2031**
+
+**This project delivers a practical, ready-to-use hybrid PQC authentication solution** to help organizations meet these timelines **now**.
+
+---
+
+## Overview
+
+`pq-auth` is a clean, modular, production-ready hybrid Post-Quantum Authentication service written in Python.
+
+It combines classical cryptography (Ed25519 / X25519) with NIST-standardized PQC algorithms (**ML-KEM-768** + **ML-DSA-65**) to protect login flows, token issuance, and sessions against both current and future quantum threats.
+
+## Current Status
+
+**MVP Complete** — Core PQC modules, hybrid JWT implementation, authentication service, and FastAPI backend are implemented and functional.
+
+A full interactive **Streamlit Demo** ("Quantum-Safe Login Arena") is coming very soon.
 
 ## Features
 
-- **Hybrid PQC Core** (planned)
-  - ML-KEM (Kyber) + X25519 for key exchange/encapsulation
-  - ML-DSA (Dilithium) + ECDSA for signatures
-  - Custom hybrid combiners and key derivation
-- **FastAPI Service**
-  - Basic FastAPI entrypoint with health checks
-  - Planned: User registration, login, JWT refresh, sessions
-- **Developer Experience**
-  - Modular structure for easy cherry-picking
-  - Planned: Typer CLI, tests, Docker support, benchmarks
+- Hybrid key exchange: **ML-KEM-768 + X25519**
+- Hybrid signatures: **ML-DSA-65 + classical**
+- Production-ready hybrid JWTs with dual signatures
+- FastAPI backend with register, login, refresh, and token verification
+- Clean, maintainable modular architecture
+- Easy-to-use PQC wrappers for custom integration
 
-## Current Project Structure
+## Quick Start
 
 ```bash
-src/
-└── pq_auth/
-    ├── main.py
-    ├── pqc/           # ← Core PQC modules will go here
-    ├── auth/
-    ├── utils/
-    └── config.py
+git clone https://github.com/EtashRhys/PQC-Auth-Service.git
+cd PQC-Auth-Service
+
+pip install -e ".[dev]"
+
+# Run the API
+uvicorn src.pq_auth.main:app --reload
+
+Project Structurebash
+
+src/pq_auth/
+├── pqc/           # ML-KEM, ML-DSA, hybrid combiners
+├── auth/          # Models, schemas, service, router
+├── utils/         # Hybrid JWT handler
+├── config.py
+└── main.py
+
+Why This Project ExistsMost PQC work remains low-level or theoretical. This project bridges the gap by providing a developer-friendly, production-oriented solution that organizations can start testing and integrating immediately.ContributingContributions are welcome! See CONTRIBUTING.md for details.LicenseApache License 2.0 — see LICENSE for details.
+
