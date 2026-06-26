@@ -56,14 +56,4 @@ pip install -e ".[dev]"
 # Run the API
 uvicorn src.pq_auth.main:app --reload
 
-Project Structurebash
-
-src/pq_auth/
-├── pqc/           # ML-KEM, ML-DSA, hybrid combiners
-├── auth/          # Models, schemas, service, router
-├── utils/         # Hybrid JWT handler
-├── config.py
-└── main.py
-
-Why This Project ExistsMost PQC work remains low-level or theoretical. This project bridges the gap by providing a developer-friendly, production-oriented solution that organizations can start testing and integrating immediately.ContributingContributions are welcome! See CONTRIBUTING.md for details.LicenseApache License 2.0 — see LICENSE for details.
 
