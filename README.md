@@ -1,3 +1,31 @@
+# PQC-Auth-Service
+
+**Hybrid Post-Quantum Authentication Service**  
+*Built for the real world — ML-KEM + ML-DSA hybrid cryptography*
+
+---
+
+**🛡️ Aligned with the White House Executive Orders of June 22, 2026**
+
+On **June 22, 2026**, President Donald J. Trump signed two landmark Executive Orders:
+
+- **Executive Order 14412**: *"Securing the Nation Against Advanced Cryptographic Attacks"*
+- **Executive Order 14413**: *"Ushering in the Next Frontier of Quantum Innovation"*
+
+These orders accelerate the national transition to **Post-Quantum Cryptography (PQC)**, with aggressive deadlines:
+- High-value assets and key establishment → **by December 31, 2030**
+- Digital signatures and authentication → **by December 31, 2031**
+
+They directly address the "**harvest now, decrypt later**" threat and call for rapid adoption of NIST-standardized PQC algorithms (including ML-KEM and ML-DSA) across federal systems, critical infrastructure, and contractors.
+
+**This project exists to make that transition practical and immediate.**
+
+---
+
+## Overview
+
+`pq-auth-service` is a clean, production-ready, hybrid post-quantum authentication service written in Python. It combines classical cryptography (Ed25519 / X25519) with NIST-standardized PQC algorithms (ML-KEM-768 + ML-DSA-65) to deliver quantum-resistant login, token issuance, and session management **today**.
+
 # pq-auth
 
 **Hybrid Post-Quantum Authentication Service** (Work in Progress)  
