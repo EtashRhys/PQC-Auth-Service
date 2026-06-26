@@ -1,26 +1,22 @@
-# PQC-Auth-Service
-A hybrid quantum authorization service made with a Python base
-
 # pq-auth
 
-**Hybrid Post-Quantum Authentication Service**  
+**Hybrid Post-Quantum Authentication Service** (Work in Progress)  
 Secure, modern authentication built for the quantum era.
 
 [![Python](https://img.shields.io/badge/Python-3.11%2B-blue)](https://www.python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-green)](https://fastapi.tiangolo.com)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
-A practical, hybrid Post-Quantum Cryptography (PQC) authentication service using **NIST FIPS 203 (ML-KEM)** for key encapsulation and **FIPS 204 (ML-DSA)** for digital signatures. It combines these with classical algorithms (X25519 + ML-KEM, ECDSA + ML-DSA) to maintain security during the transition to quantum-resistant systems.
+A practical hybrid Post-Quantum Cryptography (PQC) authentication service using **NIST FIPS 203 (ML-KEM)** for key encapsulation and **FIPS 204 (ML-DSA)** for digital signatures. It combines these with classical algorithms (X25519 + ML-KEM, ECDSA + ML-DSA) to maintain security during the PQC migration.
+
+## Status: Work in Progress
+
+This repository contains the full project structure and source code for a hybrid PQC auth service.  
+**Not all parts are fully integrated or end-to-end tested yet.** The code is modular by design — feel free to explore, copy individual modules (especially the PQC wrappers), and adapt them for your own needs.
 
 ## Why This Project?
 
-Quantum computers threaten current public-key cryptography ("store now, decrypt later" risk). This service provides a **production-oriented reference implementation** of hybrid PQC authentication — ready for evaluation, prototyping, and integration.
-
-**Key Goals:**
-- Demonstrate secure hybrid constructions
-- Provide measurable performance benchmarks
-- Offer easy deployment and extensibility
-- Encourage community review and contributions in the PQC space
+Quantum computers pose a "store now, decrypt later" threat to current public-key cryptography. This service aims to provide a **practical reference implementation** of hybrid PQC authentication for evaluation and prototyping.
 
 ## Features
 
@@ -39,27 +35,20 @@ Quantum computers threaten current public-key cryptography ("store now, decrypt 
   - Docker + Docker Compose support
   - MkDocs documentation site
 - **Observability & Ops**
-  - Structured logging, configuration via Pydantic
+  - Structured logging, Pydantic configuration
   - CI/CD workflows, pre-commit hooks, Makefile
 
-## Quick Start
+## Project Structure
 
-### 1. Clone & Setup
-
-bash
-
-# Run the API
-uv run fastapi dev src/pq_auth/main.py
-# or: make run
-
-Visit http://localhost:8000/docs for interactive API docs.CLI examples:bash
-
-uv run pq-auth keygen --hybrid
-uv run pq-auth bench
-
-DocumentationArchitecture & Design Decisions (docs/architecture.md)
-Benchmarks (docs/benchmarks.md)
-API Reference (docs/api.md) (or via /docs when running)
-
-Security & DisclaimerThis is for research, evaluation, and non-production use until independently audited.See SECURITY.md for responsible disclosure and security policy.We strongly recommend professional cryptographic review before production use.ContributingContributions welcome! See CONTRIBUTING.md.Security issues should be reported privately via the Security tab.LicenseApache License 2.0 — see LICENSE file.Built with respect for future quantum threats.
-
+```bash
+pq-auth/
+├── src/pq_auth/           # Main package
+│   ├── pqc/               # Core: ML-KEM, ML-DSA, hybrid logic
+│   ├── auth/              # Authentication business logic & API
+│   ├── core/              # Config, security, database
+│   └── ...
+├── tests/                 # Unit, integration, PQC, and performance tests
+├── docs/                  # Architecture, benchmarks, etc.
+├── docker/                # Containerization
+├── pyproject.toml
+└── ...
