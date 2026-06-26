@@ -7,16 +7,16 @@ Secure, modern authentication built for the quantum era.
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-green)](https://fastapi.tiangolo.com)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
-A practical hybrid Post-Quantum Cryptography (PQC) authentication service using **NIST FIPS 203 (ML-KEM)** for key encapsulation and **FIPS 204 (ML-DSA)** for digital signatures. It combines these with classical algorithms (X25519 + ML-KEM, ECDSA + ML-DSA) to maintain security during the PQC migration.
+A practical hybrid Post-Quantum Cryptography (PQC) authentication service using **NIST FIPS 203 (ML-KEM)** for key encapsulation and **FIPS 204 (ML-DSA)** for digital signatures. It combines these with classical algorithms (X25519 + ML-KEM, ECDSA + ML-DSA).
 
 ## Status: Work in Progress
 
-This repository contains the full project structure and source code for a hybrid PQC auth service.  
-**Not all parts are fully integrated or end-to-end tested yet.** The code is modular by design — feel free to explore, copy individual modules (especially the PQC wrappers), and adapt them for your own needs.
+This repository contains the project structure and source code for a hybrid PQC auth service.  
+**Not all parts are fully integrated or end-to-end tested yet.** The code is modular by design — feel free to explore, copy individual modules (especially the PQC wrappers in `src/pq_auth/pqc/`), and adapt them for your own needs.
 
 ## Why This Project?
 
-Quantum computers pose a "store now, decrypt later" threat to current public-key cryptography. This service aims to provide a **practical reference implementation** of hybrid PQC authentication for evaluation and prototyping.
+Quantum computers pose a "store now, decrypt later" threat to current public-key cryptography. This aims to be a **practical reference implementation** of hybrid PQC authentication.
 
 ## Features
 
@@ -43,12 +43,12 @@ Quantum computers pose a "store now, decrypt later" threat to current public-key
 ```bash
 pq-auth/
 ├── src/pq_auth/           # Main package
-│   ├── pqc/               # Core: ML-KEM, ML-DSA, hybrid logic
-│   ├── auth/              # Authentication business logic & API
+│   ├── pqc/               # ← Core: ML-KEM, ML-DSA, hybrid logic
+│   ├── auth/              # Authentication logic & API
 │   ├── core/              # Config, security, database
 │   └── ...
-├── tests/                 # Unit, integration, PQC, and performance tests
-├── docs/                  # Architecture, benchmarks, etc.
-├── docker/                # Containerization
+├── tests/
+├── docs/
+├── docker/
 ├── pyproject.toml
 └── ...
