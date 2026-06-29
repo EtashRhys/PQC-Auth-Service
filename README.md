@@ -1,3 +1,5 @@
+https://www.whitehouse.gov/videos/president-trump-signs-executive-orders-jun-22-2026/
+https://www.youtube.com/live/HNipoXNANAs?si=zfwh6OOjdR42zwA6
 # pq-auth
 
 **Hybrid Post-Quantum Authentication Service**  
