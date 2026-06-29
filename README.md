@@ -1,5 +1,8 @@
 <img width="1200" height="800" alt="17827196299747102586194974612432" src="https://github.com/user-attachments/assets/612b45fc-8b78-4931-a3c9-7d27a1bad07f" />
 
+[![White House Gallery](https://img.shields.io/badge/White_House-Gallery-blue)](https://www.whitehouse.gov/gallery/president-donald-j-trump-signs-executive-orders-on-quantum-in-the-oval-office/)
+[![Video](https://img.shields.io/badge/Watch-Video-red)](https://www.whitehouse.gov/videos/president-trump-signs-executive-orders-jun-22-2026/)
+
 https://www.whitehouse.gov/gallery/president-donald-j-trump-signs-executive-orders-on-quantum-in-the-oval-office/
 https://www.whitehouse.gov/videos/president-trump-signs-executive-orders-jun-22-2026/
 https://www.youtube.com/live/HNipoXNANAs?si=zfwh6OOjdR42zwA6
