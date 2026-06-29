@@ -3,6 +3,18 @@
 [![White House Gallery](https://img.shields.io/badge/White_House-Gallery-blue)](https://www.whitehouse.gov/gallery/president-donald-j-trump-signs-executive-orders-on-quantum-in-the-oval-office/)
 [![Video](https://img.shields.io/badge/Watch-Video-red)](https://www.whitehouse.gov/videos/president-trump-signs-executive-orders-jun-22-2026/)
 
+<p align="center">
+  <a href="https://www.whitehouse.gov/gallery/president-donald-j-trump-signs-executive-orders-on-quantum-in-the-oval-office/">
+    <img src="https://img.shields.io/badge/White_House-Gallery-0A2540?style=for-the-badge" alt="Gallery">
+  </a>
+  <a href="https://www.whitehouse.gov/videos/president-trump-signs-executive-orders-jun-22-2026/">
+    <img src="https://img.shields.io/badge/Watch-Video-red?style=for-the-badge" alt="Video">
+  </a>
+  <a href="https://www.youtube.com/live/HNipoXNANAs?si=zfwh6OOjdR42zwA6">
+    <img src="https://img.shields.io/badge/YouTube-Live-red?style=for-the-badge&logo=youtube" alt="YouTube">
+  </a>
+</p>
+
 https://www.whitehouse.gov/gallery/president-donald-j-trump-signs-executive-orders-on-quantum-in-the-oval-office/
 https://www.whitehouse.gov/videos/president-trump-signs-executive-orders-jun-22-2026/
 https://www.youtube.com/live/HNipoXNANAs?si=zfwh6OOjdR42zwA6
