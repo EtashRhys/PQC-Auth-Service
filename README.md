@@ -1,3 +1,5 @@
+<img width="1200" height="800" alt="17827196299747102586194974612432" src="https://github.com/user-attachments/assets/612b45fc-8b78-4931-a3c9-7d27a1bad07f" />
+
 https://www.whitehouse.gov/gallery/president-donald-j-trump-signs-executive-orders-on-quantum-in-the-oval-office/
 https://www.whitehouse.gov/videos/president-trump-signs-executive-orders-jun-22-2026/
 https://www.youtube.com/live/HNipoXNANAs?si=zfwh6OOjdR42zwA6
