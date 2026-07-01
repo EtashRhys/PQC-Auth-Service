@@ -1,4 +1,4 @@
-<img width="1200" height="800" alt="17827196299747102586194974612432" src="https://github.com/user-attachments/assets/612b45fc-8b78-4931-a3c9-7d27a1bad07f" />
+⁹<img width="1200" height="800" alt="17827196299747102586194974612432" src="https://github.com/user-attachments/assets/612b45fc-8b78-4931-a3c9-7d27a1bad07f" />
 
 <p align="center">
   <a href="https://www.whitehouse.gov/gallery/president-donald-j-trump-signs-executive-orders-on-quantum-in-the-oval-office/">
@@ -82,7 +82,7 @@ A full interactive **Streamlit Demo** ("Quantum-Safe Login Arena") is coming ver
 - Advanced token/session management
 - Full interactive Streamlit Demo ("Quantum-Safe Login Arena")
 
--## Why This Project Exists
+## Why This Project Exists
 
 Most Post-Quantum Cryptography work remains low-level or purely theoretical.  
 
