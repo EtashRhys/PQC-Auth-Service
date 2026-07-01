@@ -40,7 +40,15 @@ These orders accelerate America's transition to Post-Quantum Cryptography with a
 **This project delivers a practical, ready-to-use hybrid PQC authentication solution** to help organizations meet these timelines **now**.
 
 ---
-
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Current Status & Roadmap](#current-status--roadmap)
+- [Quick Start](#quick-start)
+- [Why This Project Exists](#why-this-project-exists)
+- [Contributing](#contributing)
+- [License](#license)
+- 
 ## Overview
 
 `pq-auth` is a clean, modular, production-ready hybrid Post-Quantum Authentication service written in Python.
