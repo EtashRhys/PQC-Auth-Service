@@ -70,11 +70,29 @@ A full interactive **Streamlit Demo** ("Quantum-Safe Login Arena") is coming ver
 - Clean, maintainable modular architecture
 - Easy-to-use PQC wrappers for custom integration
 
-- Why This Project Exists.
-Most PQC work remains low-level or theoretical. This project bridges the gap by providing a developer-friendly, production-oriented solution that organizations can start testing and integrating immediately.
+## Current Status & Roadmap
 
-- Contributing.
-Contributions are welcome! See CONTRIBUTING.md for details.
+**MVP Complete** — Core PQC modules, hybrid JWTs, authentication service, and FastAPI backend are implemented and functional.
+
+### Near-term Roadmap (This Week / Next)
+- Robust Key Management + rotation (in progress)
+- Crypto-agility layer
+- Standards-aligned hybrid JWTs
+- Enhanced auditing & logging
+- Advanced token/session management
+- Full interactive Streamlit Demo ("Quantum-Safe Login Arena")
+
+-## Why This Project Exists
+
+Most Post-Quantum Cryptography work remains low-level or purely theoretical.  
+
+`pq-auth` **bridges the gap** by providing a developer-friendly, production-oriented hybrid authentication service that organizations can start testing and integrating **immediately**.
+
+## Contributing
+
+Contributions are welcome! Whether it's code, documentation, testing, or ideas — every contribution helps strengthen the project.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to get started.
 
 ## Quick Start
 
